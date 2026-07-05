@@ -11,7 +11,7 @@ export default function CanvasSequence() {
   
   const currentFrameRef = useRef(0);
   const targetFrameRef = useRef(0);
-  const requestRef = useRef<number>();
+  const requestRef = useRef<number>(0);
 
   useEffect(() => {
     // Preload images
