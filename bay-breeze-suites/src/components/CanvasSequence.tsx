@@ -22,7 +22,7 @@ export default function CanvasSequence() {
       for (let i = 0; i < FRAME_COUNT; i++) {
         const img = new Image();
         const frameNum = (i + FRAME_START_OFFSET).toString().padStart(6, '0');
-        img.src = `${FOLDER_PATH}frame_${frameNum}.png`;
+        img.src = `${FOLDER_PATH}frame_${frameNum}.webp`;
         
         await new Promise<void>((resolve) => {
           img.onload = () => {
